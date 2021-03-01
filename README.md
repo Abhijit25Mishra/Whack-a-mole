@@ -1,4 +1,5 @@
-## Welcome to GitHub Pages
+Whack a Mole
+-------------
 
 You can use the [editor on GitHub](https://github.com/Abhijit25Mishra/Whack-a-mole/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
