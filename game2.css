@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    cursor: none;
+}
+body{
+    background-color: #32046a;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.heading {
+    font-size: 36px;
+    margin: 18px;
+    text-align: center;
+}
+.score{
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+}
+.holesCont{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    grid-gap: 1.2em;
+    align-content: center;
+}
+.hole{
+    position: relative;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: black;
+    overflow: hidden;
+}
+.mole{
+    position: absolute;
+    height: 70px;
+    z-index: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    animation: appear 0.3s linear;
+    pointer-events: none;
+}
+@keyframes appear {
+    from {
+        bottom: -70px;
+    }
+    to{
+        bottom: 0;
+    }
+}
+.buttons {
+    margin-top: 3em;
+    text-align: center;
+}
+.buttons button{
+    padding: 15px 45px;
+    background-color: inherit;
+    border: 1px solid white;
+    color: thistle;
+    border-radius: 15px;
+    outline: red;
+}
+.buttons.stop{
+    display: none;
+}
+.cursor img {
+    position: absolute;
+    height: 125px;
+    z-index: 4;
+    transform: translate(-15px, -50px);
+    pointer-events: none;
+  
+  }
+  @keyframes hit {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-10deg);
+    }
+  }
